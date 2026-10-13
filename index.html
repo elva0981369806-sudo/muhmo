@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="周美芳的個人首頁 - 就讀於台南應用科技大學。熱愛追星、畫畫、健身、跑咖與美食。">
+    <title>周美芳 (AF) | 個人首頁</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ambient Animated Glow Orbs -->
+    <div class="ambient-background" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <a href="#" class="nav-brand">
+                <span class="brand-icon">🔥</span>
+                <span>AF's Space</span>
+            </a>
+            <div class="nav-actions">
+                <!-- 橫感亮度/風格調節：粉黑 ↔ 紅黑 -->
+                <div class="tone-slider-wrapper" title="調節風格氛圍：粉黑 ↔ 紅黑">
+                    <button type="button" class="tone-label tone-light-btn" id="tone-light-btn" title="切換為粉黑主題">
+                        <span>🌸</span>
+                        <span class="label-text">粉黑</span>
+                    </button>
+                    <div class="slider-track-box">
+                        <input type="range" id="theme-slider" min="0" max="100" value="100" class="theme-slider-bar"
+                            aria-label="調節風格氛圍">
+                    </div>
+                    <button type="button" class="tone-label tone-dark-btn" id="tone-dark-btn" title="切換為深色紅黑">
+                        <span>🔥</span>
+                        <span class="label-text">紅黑</span>
+                    </button>
+                </div>
+
+                <button type="button" class="btn-heart" id="heart-btn" title="給美芳點讚">
+                    <span>❤️</span>
+                    <span id="heart-count">52</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Profile Section -->
+            <section class="hero-card" aria-label="個人簡介">
+                <div class="profile-visual">
+                    <div class="avatar-wrapper">
+                        <img src="MMMM.jpg" alt="周美芳的頭像與可愛娃娃" class="avatar-img">
+                        <div class="status-badge" title="目前的狀態">
+                            <span class="status-dot"></span>
+                            <span>創作中 🔥</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="school-tag">
+                        <span class="school-icon">🎓</span>
+                        <span>台南應用科技大學</span>
+                    </div>
+
+                    <div class="name-group">
+                        <h1 class="main-name">周美芳</h1>
+                        <span class="sub-name">AF</span>
+                    </div>
+
+                    <div class="specialty-badge">
+                        <span>🎨 專長：畫畫</span>
+                    </div>
+
+                    <p class="bio-text">
+                        平時喜歡追星、畫畫、健身，也愛跑咖吃美食。在生活的黑夜畫布上，燃燒出屬於自己的熱血紅色光芒！
+                    </p>
+
+                    <div class="quick-tags">
+                        <span class="tag-pill">🎨 畫畫創作</span>
+                        <span class="tag-pill">🐺 PLAVE 狼隊</span>
+                        <span class="tag-pill">🔥 力量健身</span>
+                        <span class="tag-pill">☕ 暗黑跑咖</span>
+                        <span class="tag-pill">🥩 頂級美食</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lifestyle & Interests Grid -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-bar"></span>
+                    <span>關於我的生活日常</span>
+                </h2>
+            </div>
+
+            <section class="lifestyle-grid" aria-label="興趣與日常">
+                <!-- 專長與畫畫 -->
+                <div class="feature-card">
+                    <span class="card-highlight-badge">Specialty</span>
+                    <div class="card-icon-box icon-box-drawing">🎨</div>
+                    <h3 class="card-title">專長：手繪與插畫</h3>
+                    <p class="card-desc">
+                        熱愛拿著畫筆勾勒靈感，將日常生活中的心動瞬間轉化為溫暖色彩與可愛線條。
+                    </p>
+                </div>
+
+                <!-- 追星 -->
+                <div class="feature-card">
+                    <div class="card-icon-box icon-box-star">🐺</div>
+                    <h3 class="card-title">本命追星：PLAVE</h3>
+                    <p class="card-desc">
+                        來自 Asterum 的虛擬男團 PLAVE！沉浸在狼性狂野與極致魅力的音樂舞台，能量滿滿每一天。
+                    </p>
+                </div>
+
+                <!-- 健身 -->
+                <div class="feature-card">
+                    <div class="card-icon-box icon-box-fitness">🔥</div>
+                    <h3 class="card-title">自我管理：極限健身</h3>
+                    <p class="card-desc">
+                        享受汗水淋漓與肌肉燃燒的極致快感，鍛鍊體能與剛毅自律，隨時保持巔峰戰力。
+                    </p>
+                </div>
+
+                <!-- 跑咖 -->
+                <div class="feature-card">
+                    <div class="card-icon-box icon-box-cafe">☕</div>
+                    <h3 class="card-title">週末時光：暗黑跑咖</h3>
+                    <p class="card-desc">
+                        尋訪隱匿於街角巷弄裡的特色咖啡廳，享受濃醇手沖黑咖啡與沉穩舒適的放鬆時光。
+                    </p>
+                </div>
+
+                <!-- 美食 -->
+                <div class="feature-card">
+                    <div class="card-icon-box icon-box-food">🥩</div>
+                    <h3 class="card-title">療癒味蕾：熱愛美食</h3>
+                    <p class="card-desc">
+                        探索台南與各地的極致好味、頂級燒肉與精緻料理，以美食犒賞靈魂！
+                    </p>
+                </div>
+            </section>
+
+            <!-- Featured Link Card: VLAST / PLAVE -->
+            <section class="plave-spotlight-card" aria-label="推薦連結">
+                <div class="plave-info">
+                    <span class="plave-badge">🔥 ASTERUM STAGE</span>
+                    <h2 class="plave-title">PLAVE ✕ VLAST Official</h2>
+                    <p class="plave-subtitle">
+                        點擊下方連結探索來自韓國 VLAST 旗下超人氣虛擬偶像團體 PLAVE 的官方作品與最新動態！
+                    </p>
+                </div>
+                <div class="plave-btn-group">
+                    <a href="https://vlast.com/plave/" target="_blank" rel="noopener noreferrer" class="btn-vlast-link">
+                        <span>探索 VLAST PLAVE</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Photo Spotlight Showcase -->
+            <section class="gallery-section" aria-label="照片特寫">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-bar"></span>
+                        <span>心愛收藏與夥伴</span>
+                    </h2>
+                </div>
+
+                <div class="photocard-container">
+                    <figure class="polaroid-card">
+                        <div class="polaroid-image-box">
+                            <img src="MMMM.jpg" alt="周美芳的心愛玩偶">
+                        </div>
+                        <figcaption class="polaroid-caption">
+                            <span class="polaroid-caption-text">✨ 陪伴度過每一天的可愛小夥伴</span>
+                            <span class="polaroid-caption-date">@af_life</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <p>Made with <span class="footer-heart">❤️</span> by 周美芳 (AF)</p>
+            <p>台南應用科技大學 · All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
